@@ -1,0 +1,120 @@
+.Menu--sort_block {
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 62px;
+    border-bottom: 1px solid #000000;
+
+    h1 {
+        text-align: start;
+        font-style: normal;
+        font-weight: bold;
+        margin: 0 0 70px 0;
+        font-size: 64px;
+        line-height: 78px;
+    }
+}
+
+.Menu--sort_block__btn_block {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 37px;
+
+    button {
+        width: 385px;
+        height: 120px;
+        background: #ffffff;
+        border: 2px solid #ffc804;
+        box-sizing: border-box;
+        border-radius: 30px;
+        font-style: italic;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 49px;
+        color: #ffc804;
+        border: 2px solid #ffc804;
+
+        &.active {
+            background: #ffc804;
+            color: #ffffff;
+        }
+    }
+}
+
+.Menu--wrapper__items_block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 1200px;
+    min-height: 500px;
+    margin: 0 auto;
+}
+
+.Menu--wrapper__loader-block {
+    margin-left: 485px;
+}
+
+// For tablets 1000px
+
+@media screen and (max-width: 1050px) {
+    .Menu--sort_block__btn_block {
+        button {
+            width: 295px;
+            height: 120px;
+        }
+    }
+
+    .Menu--wrapper__items_block {
+        width: 936px;
+    }
+
+    .Menu--wrapper__loader-block {
+        margin-left: 351px;
+    }
+}
+
+// For mobile 768px
+
+@media screen and (max-width: 780px) {
+    .Menu--sort_block__btn_block {
+        button {
+            width: 213.33px;
+            height: 82px;
+            font-size: 24px;
+            line-height: 29px;
+        }
+    }
+
+    .Menu--wrapper__items_block {
+        width: 693px;
+    }
+
+    .Menu--wrapper__loader-block {
+        margin-left: 228px;
+    }
+}
+
+// For mobile 320
+
+@media screen and (max-width: 414px) {
+    .Menu--sort_block__btn_block {
+        flex-direction: column;
+        margin-bottom: 21px;
+
+        button {
+            width: 290px;
+            height: 40px;
+            border-radius: 30px;
+            margin-bottom: 8px;
+        }
+    }
+
+    .Menu--wrapper__items_block {
+        width: 290px;
+    }
+
+    .Menu--wrapper__loader-block {
+        margin-left: 25px;
+    }
+}

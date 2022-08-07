@@ -1,0 +1,51 @@
+.Navbar--wrapper {
+    display: flex;
+    padding: 0;
+    justify-content: space-between;
+    width: 1148px;
+    height: 37px;
+    margin: 0 auto;
+
+    li {
+        width: 255px;
+        height: 37px;
+        list-style-type: none;
+        font-family: "Calibri";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 30px;
+        line-height: 37px;
+
+        a {
+            display: block;
+            background-color: transparent;
+            border-radius: 20px;
+            transition: 0.2s;
+        }
+    }
+
+    .Navbar--active {
+        background-color: #ffffff;
+        border: double 2px transparent;
+        border-radius: 20px;
+        background-image: linear-gradient(white, white), linear-gradient(to top, #ffc804, white);
+        background-origin: border-box;
+        background-clip: content-box, border-box;
+    }
+}
+
+// For tablets 1000px
+
+@media screen and (max-width: 1050px) {
+    .Navbar--wrapper {
+        width: 936px;
+    }
+}
+
+// For mobile 768px
+
+@media screen and (max-width: 768px) {
+    .Navbar--wrapper {
+        display: none;
+    }
+}

@@ -1,0 +1,251 @@
+%text-style {
+    font-family: "Calibri";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 37px;
+}
+
+.Header--wrapper {
+    display: flex;
+    flex-direction: column;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    padding-top: 52px;
+    margin-bottom: 58px;
+    width: 100%;
+    height: 227px;
+    background: linear-gradient(180deg, #ffc804 0%, #ffffff 99.99%, rgba(255, 255, 255, 0) 100%);
+}
+
+.Header--logo {
+    width: 287px;
+    height: 85px;
+}
+
+.Header--contentBlock {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1200px;
+    height: 85px;
+    margin: 0 auto;
+    margin-bottom: 85px;
+
+    button {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 13px 0 13px;
+        width: 197px;
+        height: 74px;
+        background-color: transparent;
+        opacity: 100;
+        border: 4px solid #ffffff;
+        box-sizing: border-box;
+        border-radius: 48px;
+    }
+
+    p {
+        @extend %text-style;
+        margin: 0;
+    }
+
+    a {
+        @extend %text-style;
+    }
+}
+
+.Header--delivery {
+    display: flex;
+    flex-direction: column;
+    width: 268px;
+}
+
+.Header--phone {
+    width: 268px;
+}
+
+// For tablets 1000px
+
+@media screen and (max-width: 1050px) {
+    .Header--logo {
+        margin-top: -15px;
+    }
+
+    .Header--contentBlock {
+        width: 936px;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        button {
+            position: relative;
+            z-index: 1;
+            width: 74px;
+            height: 74px;
+            padding-left: 6px;
+
+            p {
+                display: none;
+            }
+        }
+    }
+
+    .Header--delivery {
+        display: none;
+    }
+
+    .Header--phone {
+        a {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 30px;
+            line-height: 37px;
+        }
+    }
+}
+
+@media screen and (min-width: 1050px) {
+    .Header--delivery_tablet {
+        display: none;
+    }
+}
+
+.Header--delivery_tablet {
+    text-align: start;
+
+    p {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 30px;
+        line-height: 37px;
+    }
+}
+
+.Header--items_count {
+    @extend %text-style;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    bottom: 52px;
+    left: 42px;
+    width: 28px;
+    height: 28px;
+    border-radius: 50px;
+    background-color: white;
+    font-size: 20px;
+}
+
+@media screen and (min-width: 1050px) {
+    .Header--items_count {
+        display: none;
+    }
+}
+
+// For mobile 768px
+
+@media screen and (max-width: 780px) {
+    .Header--contentBlock {
+        width: 693px;
+
+        button {
+            width: 56px;
+            height: 56px;
+        }
+    }
+
+    img[alt="cart"] {
+        width: 38.51px;
+        height: 36.32px;
+    }
+
+    .Header--logo {
+        width: 227.63px;
+        height: 65px;
+        margin-top: -8px;
+    }
+
+    .Header--delivery_tablet {
+        white-space: nowrap;
+        position: relative;
+        left: 18px;
+
+        p {
+            font-size: 24px;
+            line-height: 29px;
+        }
+    }
+
+    .Header--phone {
+        a {
+            font-size: 24px;
+            line-height: 29px;
+        }
+    }
+
+    .Header--items_count {
+        bottom: 38px;
+        left: 32px;
+        width: 23px;
+        height: 23px;
+    }
+}
+
+// For mobile 320
+
+@media screen and (max-width: 414px) {
+    .Header--wrapper {
+        height: 94px;
+        padding: 0;
+        margin-bottom: 20px;
+        background: linear-gradient(180deg, #ffc804 79%, #ffffff 99.99%, rgba(255, 255, 255, 0) 100%);
+    }
+
+    .Header--delivery_tablet {
+        display: none;
+    }
+
+    .Header--contentBlock {
+        align-items: center;
+        width: 290px;
+        margin-bottom: 0;
+
+        button {
+            margin-top: -5px;
+            width: 40px;
+            height: 40px;
+        }
+    }
+
+    .Header--logo {
+        width: 107px;
+        height: 32px;
+    }
+
+    .Header--phone {
+        margin-top: -5px;
+        a {
+            font-size: 14px;
+            line-height: 17px;
+        }
+    }
+
+    img[alt="cart"] {
+        position: relative;
+        right: 3px;
+        width: 28.08px;
+        height: 25.95px;
+    }
+
+    .Header--items_count {
+        bottom: 27px;
+        left: 21px;
+        width: 15px;
+        height: 15px;
+        font-size: 12px;
+    }
+}

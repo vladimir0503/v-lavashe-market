@@ -1,0 +1,70 @@
+p {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: 0.1em;
+    color: #000000;
+}
+
+.PageHeader--header {
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 37px;
+    border-bottom: 1px solid #000000;
+}
+
+.PageHeader--title_block {
+    display: flex;
+    align-items: center;
+    margin-bottom: 70px;
+
+    h1 {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 64px;
+        line-height: 78px;
+        margin: 0 53px 0 0;
+    }
+}
+
+// For tablets 1000px
+
+@media screen and (max-width: 1050px) {
+    .PageHeader--header {
+        width: 936px;
+    }
+}
+
+// For mobile 768px
+
+@media screen and (max-width: 780px) {
+    .PageHeader--header {
+        width: 693px;
+    }
+
+    .PageHeader--title_block {
+        h1 {
+            font-size: 55px;
+            line-height: 67px;
+        }
+    }
+}
+
+// For mobile 320
+
+@media screen and (max-width: 414px) {
+    .PageHeader--header {
+        width: 290px;
+    }
+
+    .PageHeader--title_block {
+        margin-bottom: 19px;
+        h1 {
+            font-size: 24px;
+            line-height: 29px;
+        }
+    }
+}

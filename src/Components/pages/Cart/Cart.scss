@@ -1,0 +1,209 @@
+.Cart--wrapper {
+    margin-bottom: 252px;
+}
+
+p {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: 0.1em;
+    color: #000000;
+}
+
+.Cart--header {
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+    margin: 0 auto;
+    border-bottom: 1px solid #000000;
+}
+
+.Card--title_block {
+    display: flex;
+    align-items: center;
+    margin-bottom: 70px;
+
+    h1 {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 64px;
+        line-height: 78px;
+        margin: 0 53px 0 0;
+    }
+
+    button {
+        width: 255px;
+        height: 60px;
+        background: #ffffff;
+        border: 2px solid #ffc804;
+        box-sizing: border-box;
+        border-radius: 20px;
+        font-style: italic;
+        font-weight: bold;
+        font-size: 31px;
+        line-height: 49px;
+        letter-spacing: 0.1em;
+        color: #ffc804;
+    }
+}
+
+.Card--sum_block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 37px;
+
+    button {
+        width: 414px;
+        height: 120px;
+        left: 125px;
+        right: 901px;
+        top: 442px;
+        background: #ffc804;
+        border-radius: 30px;
+        font-style: italic;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 49px;
+        letter-spacing: 0.1em;
+        color: #ffffff;
+        border: 1px solid #ffffff;
+    }
+}
+
+.Card--sum_mobile {
+    display: none;
+}
+
+.Card--empty {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+    height: 170px;
+    margin: 0 auto;
+    border-bottom: 1px solid #000000;
+}
+
+//For tablets 1000px
+
+@media screen and (max-width: 1050px) {
+    .Cart--header {
+        width: 936px;
+    }
+
+    .Card--empty {
+        width: 936px;
+        margin-bottom: 252px;
+    }
+
+    .Card--sum_block {
+        button {
+            width: 414px;
+            height: 120px;
+        }
+    }
+}
+
+// For mobile 768px
+
+@media screen and (max-width: 780px) {
+    .Cart--header {
+        width: 694px;
+    }
+
+    .Card--empty {
+        width: 694px;
+    }
+
+    .Card--sum_block {
+        button {
+            width: 277px;
+            height: 82px;
+            font-size: 24px;
+            line-height: 29px;
+        }
+
+        p {
+            width: 336px;
+            text-align: end;
+        }
+    }
+
+    .Card--title_block {
+        button {
+            margin-bottom: -15px;
+            width: 171px;
+            height: 37px;
+            font-size: 19px;
+            line-height: 29px;
+        }
+    }
+}
+
+// For mobile 320
+
+@media screen and (max-width: 414px) {
+    .Cart--header {
+        width: 290px;
+    }
+
+    .Card--title_block {
+        align-items: baseline;
+        justify-content: space-between;
+        margin: 0;
+        margin-bottom: 19px;
+
+        h1 {
+            font-size: 24px;
+            line-height: 29px;
+        }
+
+        button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 120px;
+            height: 20px;
+            font-size: 15px;
+            line-height: 18px;
+        }
+    }
+
+    .Card--sum_block {
+        button {
+            width: 135px;
+            height: 37px;
+            border-radius: 30px;
+            font-size: 12px;
+            line-height: 15px;
+            letter-spacing: 0.1em;
+        }
+
+        p {
+            width: auto;
+        }
+    }
+
+    .Card--empty {
+        width: 290px;
+        height: 120px;
+
+        p {
+            font-size: 18px;
+            line-height: 22px;
+        }
+    }
+
+    .Card--sum {
+        display: none;
+    }
+
+    .Card--sum_mobile {
+        display: block;
+        font-size: 15px;
+        line-height: 18px;
+        letter-spacing: 0.1em;
+    }
+}

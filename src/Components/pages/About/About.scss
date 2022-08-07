@@ -1,0 +1,107 @@
+.About--btnBlock {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 37px;
+
+    button {
+        width: 414px;
+        height: 120px;
+        left: 125px;
+        right: 901px;
+        top: 442px;
+        background: #ffc804;
+        border-radius: 30px;
+        font-style: italic;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 49px;
+        letter-spacing: 0.1em;
+        color: #ffffff;
+        border: 1px solid #ffffff;
+    }
+}
+
+.About--contentWrapper {
+    width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 294px;
+    padding-left: 15px;
+    text-align: start;
+    border-bottom: 1px solid #000000;
+
+    p {
+        font-style: italic;
+        font-weight: bold;
+        font-size: 31px;
+        line-height: 34px;
+        margin: 46px 0 46px 0;
+    }
+
+    span {
+        color: black;
+        font-size: 40px;
+    }
+
+    h2 {
+        font-style: italic;
+        font-weight: bold;
+        font-size: 40px;
+        margin: 0 0 46px 0;
+    }
+}
+
+//For tablets 1000px
+
+@media screen and (max-width: 1050px) {
+    .About--contentWrapper {
+        width: 936px;
+    }
+}
+
+// For mobile 768px
+
+@media screen and (max-width: 780px) {
+    .About--contentWrapper {
+        width: 693px;
+    }
+
+    .About--btnBlock {
+        button {
+            width: 277px;
+            height: 82px;
+            font-size: 24px;
+            line-height: 29px;
+        }
+    }
+}
+
+// For mobile 320
+
+@media screen and (max-width: 414px) {
+    .About--contentWrapper {
+        width: 290px;
+        margin-bottom: 26px;
+
+        p {
+            font-size: 20px;
+            line-height: 24px;
+        }
+
+        span,
+        h2 {
+            font-size: 26px;
+        }
+    }
+
+    .About--btnBlock {
+        button {
+            width: 135px;
+            height: 37px;
+            border-radius: 30px;
+            font-size: 15px;
+            line-height: 18px;
+            letter-spacing: 0.1em;
+        }
+    }
+}

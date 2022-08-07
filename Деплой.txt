@@ -1,0 +1,2 @@
+https://v-lavashe.surge.sh/ - деплой Surge
+https://v-lavashe.herokuapp.com/ - деплой Heroku

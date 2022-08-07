@@ -1,0 +1,37 @@
+body {
+  font-family: "Calibri";
+  font-style: normal;
+  font-weight: normal;
+}
+
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.Main {
+  flex-grow: 1;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: #000 !important;
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.2s;
+
+  &:active {
+    transform: translateY(5px);
+  }
+}

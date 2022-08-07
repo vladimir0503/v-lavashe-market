@@ -1,0 +1,121 @@
+.Contacts--contentWrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 169px;
+
+    p,
+    a {
+        text-align: start;
+        font-style: italic;
+        font-weight: bold;
+        font-size: 29px;
+        line-height: 34px;
+    }
+}
+
+.Contacts--infoBlock {
+    width: 450px;
+}
+
+.Contacts--infoItem {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 28px;
+
+    img {
+        margin-right: 28px;
+    }
+
+    img[alt="gps"] {
+        width: 70px;
+        height: 70px;
+        margin-top: -26px;
+    }
+
+    img[alt="phone"] {
+        width: 55px;
+        height: 55px;
+    }
+
+    img[alt="email"] {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+.Contacts--map {
+    border: 2px solid #ffc804;
+    border-radius: 20px;
+}
+
+//For tablets 1000px
+
+@media screen and (max-width: 1050px) {
+    .Contacts--contentWrapper {
+        width: 936px;
+    }
+
+    .Contacts--map {
+        width: 444px;
+        height: 437px;
+    }
+}
+
+// For mobile 768px
+
+@media screen and (max-width: 780px) {
+    .Contacts--contentWrapper {
+        width: 693px;
+        flex-direction: column;
+    }
+
+    .Contacts--map {
+        width: 693px;
+        height: 389px;
+    }
+}
+
+// For mobile 320
+
+@media screen and (max-width: 414px) {
+    .Contacts--contentWrapper {
+        width: 290px;
+        border-bottom: 1px solid #000000;
+        margin-bottom: 0;
+
+        p,
+        a {
+            font-size: 20px;
+            line-height: 24px;
+            white-space: nowrap;
+        }
+    }
+
+    .Contacts--infoBlock {
+        width: 290px;
+    }
+
+    .Contacts--infoItem {
+        img[alt="gps"] {
+            width: 30px;
+            height: 30px;
+        }
+
+        img[alt="phone"] {
+            width: 25px;
+            height: 25px;
+        }
+
+        img[alt="email"] {
+            width: 30px;
+            height: 30px;
+        }
+    }
+
+    .Contacts--map {
+        display: none;
+    }
+} ;
