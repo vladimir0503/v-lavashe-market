@@ -18,8 +18,6 @@ const BurgerMenu = () => {
 
     const externalClickInit = e => {
 
-        // console.log(e.composedPath());
-
         if (e.composedPath().includes(burgerBtnRef.current)) return;
 
         if (!e.composedPath().includes(burgerRef.current)) {

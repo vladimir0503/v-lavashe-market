@@ -32,14 +32,19 @@
 .Footer--copyright {
     display: flex;
     align-items: flex-start;
+    justify-content: space-between;
     width: 1200px;
     margin: 0 auto;
 
     p {
         font-style: normal;
         font-weight: normal;
-        font-size: 36px;
+        font-size: 23px;
         line-height: 44px;
+    }
+
+    a {
+        text-decoration: underline;
     }
 }
 
