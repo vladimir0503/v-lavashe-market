@@ -17,9 +17,12 @@ const BurgerMenu = () => {
     };
 
     const externalClickInit = e => {
-        if (e.path.includes(burgerBtnRef.current)) return;
 
-        if (!e.path.includes(burgerRef.current)) {
+        // console.log(e.composedPath());
+
+        if (e.composedPath().includes(burgerBtnRef.current)) return;
+
+        if (!e.composedPath().includes(burgerRef.current)) {
             closeBurger();
         };
     };
