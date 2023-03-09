@@ -30,7 +30,7 @@ const Footer = () => {
             </div>
             <div className='Footer--copyright'>
                 <p>&copy; 2021</p>
-                <p>Design by Anton Gumenuk</p>
+                <p>Design by <a href='https://www.behance.net/toxagumi' target='_blank'>Anton Gumenuk</a></p>
                 <p>Created by <a href='https://vladimir0503.github.io/Portfolio/' target='_blank'>Vladimir Bezobrazov</a></p>
             </div>
         </footer>
